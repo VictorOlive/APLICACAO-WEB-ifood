@@ -27,3 +27,32 @@ img {
 a {
     text-decoration: none;
 }
+
+/* Aside Bar */
+aside {
+    width: 350px;
+    height: 100vh;
+    border-right: 1px solid #DCDCDC;
+}
+
+.aside-menu {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 150px;
+}
+
+.aside-menu a {
+    color: #3E3E3E;
+    font-weight: 500;
+}
+
+.aside-menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.aside-menu-items img {
+    width: 28px;
+    height: 28px;
+}

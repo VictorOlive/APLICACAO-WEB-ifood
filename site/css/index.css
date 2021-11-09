@@ -6,7 +6,7 @@
     height: 90px;
 }
 
-header a img {
+.navbar-brand {
     width: 79px;
     height: 41px;
 }
