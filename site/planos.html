@@ -27,75 +27,50 @@
     </nav>
     <nav class="redBar">
     </nav>
-    <div class="conteinerForm">
-        <form>
-            <div class="form-group">
-                <div class="formStyle">
-                    <h1>Endereço da loja</h1>
-                    <h4>Preencha as informações de endereço da sua loja.</h4>
-                    <label for="name">CEP</label>
-                    <input type="text" class="form-control" placeholder="00000-000"
-                        pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$">
-                    <div class="row">
-                        <div class="col">
-                            <label for="estado">Estado</label>
-                            <br>
-                            <select class="selectStyle "name="estados-brasil">
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                                <option value="EX">Estrangeiro</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <label for="cidade">Cidade</label>
-                            <input type="text" placeholder="Cidade"class="form-control">
-                        </div>
-                    </div>
-                    <label for="bairro">Bairro</label>
-                    <input type="text" placeholder="Bairro" class="form-control">
-                    <label for="endereco">Endereço</label>
-                    <input type="text" placeholder="Endereço" class="form-control">
-                    <div class="row">
-                        <div class="col">
-                            <label for="numero">Numero</label>
-                            <input type="number" placeholder="Numero" class="form-control">
-                        </div>
-                        <div class="col">
-                            <label for="complemento">Complemento(opcional)</label>
-                            <input type="text" placeholder="Complemento" class="form-control">
-                        </div>
-                    </div>
-                    <button>Continuar</button>
-
-                </div>
-            </div>
-        </form>
+    <div class="planosStyle">
+        <div>
+            <h1>Planos iFood</h1>
+            <h3>Seleciona o plano ideal para sua loja.</h3>
+        </div>
     </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-xl-6 cardStyle">
+                <h1><img src="/assets/basic_plan.png" alt="">Básico</h1>
+                <h2><img src="/assets/check.png" alt="">Sua loja no app do iFood</h2>
+                <h2><img src="/assets/check.png" alt="">Entrega feita peal sua loja</h2>
+                <h2><img src="/assets/check.png" alt="">Vantagens do Chef: descontos e benefícios exclusivos</h2>
+                <div class="linhaStyle">
+                </div>
+                <h3>12%</h3>
+                <h4>Comissão sobre pedidos</h4>
+                <h3>3,5%</h3>
+                <h4>Taxa para pedidos pagos via iFood</h4>
+                <h3>R$100/mês </h3>
+                <h5>1° mês grátis</h5>
+                <h4>Mensalidade para faturamento acima de R$1800</h4>
+                <button>Selecionar</button>
+            </div>
+            <div class="col-6 col-xl-6 cardStyle">
+                <h1><img src="/assets/delivery_plan.png" alt="">Básico</h1>
+                <h2><img src="/assets/check.png" alt="">Tudo do Plano Básico</h2>
+                <h2><img src="/assets/check.png" alt="">Entrega com parceiros iFood</h2>
+                <h2><img src="/assets/check.png" alt="">Rastreio de entrega em tempo real</h2>
+                <br>
+                <div class="linhaStyle">
+                </div>
+                <h3>23%</h3>
+                <h4>Comissão sobre pedidos</h4>
+                <h3>3,5%</h3>
+                <h4>Taxa para pedidos pagos via iFood</h4>
+                <h3>R$ 130/mês</h3>
+                <h5>1° mês grátis</h5>
+                <h4>Mensalidade para faturamento acima de R$1800</h4>
+                <button>Selecionar</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
