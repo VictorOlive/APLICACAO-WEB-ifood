@@ -5,4 +5,205 @@
     font-weight: 400;
 
     color: #737373;
+
+    margin-bottom: 50px;
+}
+
+/* Cards */
+.card {
+    max-width: 850px;
+    background-color: #FFF;
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+
+    border: none;
+    border-radius: 10px;
+    
+    padding: 20px 30px;
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    max-width: 650px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.card-items {
+    display: flex;
+    align-items: center;
+}
+
+.card-pedidos {
+    width: 250px;
+    border-radius: 10px;
+    background-color: #FA3D5D;
+    color: #FFF;
+    text-align: center;
+
+    padding: 30px;
+    margin-top: 20px;
+    margin-right: 80px;
+
+
+    flex: 1 1 150px;
+}
+
+.card-pedidos h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: initial;
+
+    margin-bottom: 28px;
+}
+
+.card-pedidos-dados-1 {
+    font-size: 36px;
+}
+
+.card-pedidos-dados-2 {
+    font-size: 18px;
+}
+
+/* Média de pedidos */
+.media-pedidos {
+    flex: 2 1 300px;
+}
+
+.media-pedidos h3 {
+    font-size: 18px;
+}
+
+.selectStyle {
+    padding: 10px;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* Fechamento do recebimento de pedidos */
+.card-fechamento {
+    display: flex;
+}
+
+.card-fechamento p {
+    margin-right: 80px;
+}
+
+/* Switch Button */
+.switch {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+  
+.switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.switch--shadow + label {
+    padding: 2px;
+    width: 80px;
+    height: 40px;
+    background-color: #dddddd;
+    border-radius: 60px;
+}
+
+.switch--shadow + label:before,
+.switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: '';
+}
+
+.switch--shadow + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: all 0.4s;
+}
+
+.switch--shadow + label:after {
+  width: 40px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+
+.switch--shadow:checked + label:before {
+    background-color: #8ce196;
+}
+
+.switch--shadow:checked + label:after {
+    transform: translateX(40px);
+}
+
+/* Pedidos encontrados */
+.table-title {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.table-data {
+    font-size: 14px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.table-data td {
+    padding: 10px 0;
+}
+
+.table-data:nth-child(odd) {
+    background-color: #F7F7F7;
+}
+
+.table-data-detalhes {
+    font-weight: 500;
+    text-align: right;
+    color: #FA3D5D;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .card-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-pedidos {
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+
+    .media-pedidos {
+        flex: none;
+    }
+
+    .card-fechamento {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-fechamento p {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
 }

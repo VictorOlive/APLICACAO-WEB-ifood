@@ -80,22 +80,103 @@
             <h1>Pedidos</h1>
             <p>Veja aqui os pedidos feitos em seu restaurante. Nesta página você também pode cancelar pedidos.</p>
 
-            <section>
+            <section class="card">
                 <h2>Acompanhamento</h2>
 
-                <div>
-                    <h3>Pedidos de hoje</h3>
-                    <span>33</span>
-                    <span>pedidos</span>
-                </div>
-
-                <div>
-                    <h3>Média de capacidade de pedidos atendidos por hora</h3>
+                <div class="card-items">
+                    <div class="card-pedidos">
+                        <h3>Pedidos de hoje</h3>
+                        
+                        <div class="card-pedidos-dados">
+                            <span class="card-pedidos-dados-1">33</span>
+                            <span class="card-pedidos-dados-2">pedidos</span>
+                        </div>
+                    </div>
+    
+                    <div class="media-pedidos">
+                        <h3>Média de capacidade de pedidos atendidos por hora</h3>
+    
+                        <select class="selectStyle" name="">
+                            <option value="AC">0 - 19 pedidos</option>
+                            <option value="AL">20 - 35 pedidos</option>
+                            <option value="AP">36 - 50 pedidos</option>
+                            <option value="AM">51 - 65 pedidos</option>
+                            <option value="BA">66 - 80 pedidos</option>
+                            <option value="CE">81 - 95 pedidos</option>
+                            <option value="DF">96 - 110 pedidos</option>
+                        </select>
+                    </div>
                 </div>
             </section>
 
-            <section></section>
-            <section></section>
+            <section class="card">
+                <h2>Fechamento automático do recebimento de pedidos</h2>
+                <div class="card-fechamento">
+                    <p>Selecione essa opção se quiser que a plataforma feche temporariamente o recebimento de pedidos quando sua capacidade máxima for atingida.</p>
+
+                    <div class="switch__container">
+                        <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
+                        <label for="switch-shadow"></label>
+                      </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Pedidos encontrados</h2>
+                <p>Pedidos não confirmados não aparecerão na tabela.</p>
+
+                <table>
+                    <tr class="table-title">
+                        <td>Pedido</td>
+                        <td>Data</td>
+                        <td>Pagamento</td>
+                        <td>Prato</td>
+                        <td>Entrega</td>
+                        <td>Cupom</td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>8394</td>
+                        <td>09/11/2021 19:53</td>
+                        <td>ONLINE</td>
+                        <td>R$27,90</td>
+                        <td>R$0,00</td>
+                        <td>-</td>
+                        <td class="table-data-detalhes"><a href="">Ver detalhes</a></td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>8394</td>
+                        <td>09/11/2021 19:53</td>
+                        <td>ONLINE</td>
+                        <td>R$15,70</td>
+                        <td>R$0,00</td>
+                        <td>-</td>
+                        <td class="table-data-detalhes"><a href="">Ver detalhes</a></td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>8394</td>
+                        <td>09/11/2021 19:53</td>
+                        <td>ONLINE</td>
+                        <td>R$44,33</td>
+                        <td>R$0,00</td>
+                        <td>-</td>
+                        <td class="table-data-detalhes"><a href="">Ver detalhes</a></td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>8394</td>
+                        <td>09/11/2021 19:53</td>
+                        <td>ONLINE</td>
+                        <td>R$58,60</td>
+                        <td>R$0,00</td>
+                        <td>-</td>
+                        <td class="table-data-detalhes"><a href="">Ver detalhes</a></td>
+                    </tr>
+                </table>
+            </section>
         </main>
         
     </div>
