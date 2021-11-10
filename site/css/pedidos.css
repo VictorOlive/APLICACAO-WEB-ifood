@@ -1,39 +1,6 @@
 /* MAIN */
-.main p {
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 400;
-
-    color: #737373;
-
-    margin-bottom: 50px;
-}
 
 /* Cards */
-.card {
-    max-width: 850px;
-    background-color: #FFF;
-    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
-
-    border: none;
-    border-radius: 10px;
-    
-    padding: 20px 30px;
-    margin-bottom: 30px;
-}
-
-.card h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    max-width: 650px;
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 20px;
-}
-
 .card-items {
     display: flex;
     align-items: center;
@@ -96,7 +63,16 @@
     margin-right: 80px;
 }
 
+.info-pedidos p {
+    font-size: 16px;
+    line-height: 24px;
+    color:#737373;
+}
+
 /* Switch Button */
+.switch__container {
+    margin-bottom: 20px;
+}
 .switch {
     position: absolute;
     margin-left: -9999px;
@@ -207,3 +183,4 @@
         margin-bottom: 20px;
     }
 }
+

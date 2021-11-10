@@ -101,6 +101,10 @@ aside {
    
 }
 
+.menu-icon-active {
+    fill: #EA1D2C;
+}
+
 /* Mobile */
 @media screen and (min-width: 960px) {
     header {
@@ -259,8 +263,42 @@ main {
     margin-left: 300px;
 }
 
+.main p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+
+    color: #737373;
+
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width: 960px) {
     main {
         margin-left: 0;
     }
+}
+
+.card {
+    max-width: 900px;
+    background-color: #FFF;
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+
+    border: none;
+    border-radius: 10px;
+    
+    padding: 20px 30px;
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    max-width: 650px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
 }
