@@ -1,0 +1,71 @@
+/* ENTREGAS */
+.card-beneficios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    max-width: 928px;
+    background-color: #FA3D5D;
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+
+    border: none;
+    border-radius: 10px;
+    
+    padding: 20px;
+    margin-bottom: 80px;
+    height: 105px;
+
+    position: relative;
+}
+
+.card-beneficios-ilustracao {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card-beneficios-infos {
+    display: flex;
+}
+
+.card-beneficios-infos p {
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFF;
+    margin-left: 170px;
+    /* margin-top: 50px; */
+}
+
+
+.button-align{
+    margin: auto!important;
+}
+
+.btn-light {
+    color: #FA3D5D;
+    font-weight: 700;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.row p{
+    margin: 0px 0px 0px 25px;
+    font-size: clamp(0.7rem, 20px, 1rem); 
+}
+
+.row button{
+
+    float: right;
+    font-size: clamp(0.7rem, 20px, 1rem); 
+}
+
+.img-style{
+    max-width: 928px
+}
+
+@media screen and (max-width: 960px) {
+    .card-beneficios-ilustracao {
+        display: none;
+    }
+}
