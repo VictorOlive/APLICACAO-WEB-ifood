@@ -9,7 +9,7 @@ import br.com.fiap.ifood.entities.Endereco;
 
 public class EnderecoDAO {
 
-	Connection connection;
+	private Connection connection;
 
 	public EnderecoDAO(Connection connection) {
 		this.connection = connection;
@@ -24,6 +24,7 @@ public class EnderecoDAO {
 			id = rs.getInt("count") + 1;
 		}
 
+		endereco.setCdEndereco(id);
 		PreparedStatement stmt = connection.prepareStatement(
 				"INSERT INTO T_ENDERECO (CD_ENDERECO, CD_CEP, DS_UF, NM_CIDADE, NM_BAIRRO, NM_ENDERECO, VL_NUMERO, DS_COMPLEMENTO) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 

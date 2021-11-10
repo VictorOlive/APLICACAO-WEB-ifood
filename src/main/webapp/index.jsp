@@ -41,7 +41,7 @@
                     </h2>
                 </div>
                 <div class="col-12 col-md-6 centerForm">
-                    <form>
+                    <form action="/challenge-ifood/endereco" method="get">
                         <div class="form-group">
                             <div class="formStyle">
                                 <h3>Cadastre sua loja</h3>

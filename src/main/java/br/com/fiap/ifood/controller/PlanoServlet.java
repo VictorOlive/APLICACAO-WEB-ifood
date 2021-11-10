@@ -31,7 +31,6 @@ public class PlanoServlet extends HttpServlet {
 
 		try {
 
-
 			List<Plano> planos = planoDAO.getPlanos();
 			List<PlanoAdapter> planosAdapter = new ArrayList<>();
 
@@ -40,7 +39,7 @@ public class PlanoServlet extends HttpServlet {
 			for (Plano plano : planos) {
 				planosAdapter.add(new PlanoAdapter(Integer.toString(plano.getCdPlano()),
 						plano.getNmPlano(), df.format(plano.getVlComisao() * 100),
-						df.format(plano.getVlTaxa() * 10),
+						df.format(plano.getVlTaxa() * 100),
 						df.format(plano.getVlMensalidade())));
 			}
 
@@ -53,6 +52,14 @@ public class PlanoServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		req.getSession().setAttribute("idPlano", req.getParameter("idPlano"));
+
+		resp.sendRedirect("/challenge-ifood/loja");
 	}
 
 }

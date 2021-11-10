@@ -11,7 +11,7 @@ import br.com.fiap.ifood.entities.Plano;
 
 public class PlanoDAO {
 
-	Connection connection;
+	private Connection connection;
 
 	public PlanoDAO(Connection connection) {
 		this.connection = connection;

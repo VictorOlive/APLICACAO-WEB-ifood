@@ -3,7 +3,7 @@
 <%@ page import="br.com.fiap.ifood.entities.Plano" %>
 <%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 
 <head>
@@ -39,7 +39,7 @@
         </div>
     </div>
     <div class="container">
-        <form>
+        <form action="/challenge-ifood/planos" method="post">
             <div class="row justify-content-center">
                 <c:forEach items="${planos}" var="p">
                     <div class="col-6 col-xl-6 cardStyle">
@@ -56,6 +56,7 @@
                         <h3>R$<c:out value="${p.vlMensalidade}" />/mês </h3>
                         <h5>1° mês grátis</h5>
                         <h4>Mensalidade para faturamento acima de R$1800</h4>
+                        <input type="hidden" name="idPlano" value="<c:out value='${p.cdPlano}'/>">
                         <button type="submit">Selecionar</button>
                     </div>
                 </c:forEach>

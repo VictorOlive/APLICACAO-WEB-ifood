@@ -2,8 +2,8 @@
 <%@ page import="java.util.List" %>  
 <%@ page import="br.com.fiap.ifood.entities.Plano" %>
 <%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="pt-BR">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -32,19 +32,18 @@
     <nav class="redBar">
     </nav>
     <div class="conteinerForm">
-        <form>
+        <form action="/challenge-ifood/endereco" method="post">
             <div class="form-group">
                 <div class="formStyle">
                     <h1>Endereço da loja</h1>
                     <h4>Preencha as informações de endereço da sua loja.</h4>
                     <label for="name">CEP</label>
-                    <input type="text" class="form-control" placeholder="00000-000"
-                        pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$">
+                    <input type="text" class="form-control" placeholder="00000-000" name="cep">
                     <div class="row">
                         <div class="col">
                             <label for="estado">Estado</label>
                             <br>
-                            <select class="selectStyle "name="estados-brasil">
+                            <select class="selectStyle" name="estados-brasil">
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>
@@ -77,24 +76,24 @@
                         </div>
                         <div class="col">
                             <label for="cidade">Cidade</label>
-                            <input type="text" placeholder="Cidade"class="form-control">
+                            <input type="text" placeholder="Cidade" class="form-control" name="cidade">
                         </div>
                     </div>
                     <label for="bairro">Bairro</label>
-                    <input type="text" placeholder="Bairro" class="form-control">
+                    <input type="text" placeholder="Bairro" class="form-control" name="bairro">
                     <label for="endereco">Endereço</label>
-                    <input type="text" placeholder="Endereço" class="form-control">
+                    <input type="text" placeholder="Endereço" class="form-control" name="endereco">
                     <div class="row">
                         <div class="col">
                             <label for="numero">Numero</label>
-                            <input type="number" placeholder="Numero" class="form-control">
+                            <input type="number" placeholder="Numero" class="form-control" name="numero">
                         </div>
                         <div class="col">
                             <label for="complemento">Complemento(opcional)</label>
-                            <input type="text" placeholder="Complemento" class="form-control">
+                            <input type="text" placeholder="Complemento" class="form-control" name="complemento">
                         </div>
                     </div>
-                    <button>Continuar</button>
+                    <button type="submit">Continuar</button>
 
                 </div>
             </div>
