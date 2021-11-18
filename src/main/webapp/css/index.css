@@ -29,10 +29,12 @@
 
 /* MAIN */
 .bg-main {
-    background-image: url(/site/assets/hero-section.png);
+    background-image: url(../assets/hero-section.png);
     background-size: cover;
     background-position: center;
+    margin: 0px !important;
 }
+
 
 .container-fluid{
     width: 80%!important;
