@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
+
 <html lang="PT-BR">
 
 <head>
@@ -15,18 +16,23 @@
         crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Challenge - iFood</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <header class=" container-fluid navbar navbar-light">
         <a class="navbar-brand" href="#">
             <img src="assets/ifood-logo.svg" alt="">
         </a>
-    </nav>
-    <div class="conteiner-imagem">
+        <nav class="menu-item">
+            <a href="https://portal.ifood.com.br/login">Portal do Parceiro</a>
+        </nav>
+    </header>
+    
+    <main class="bg-main">
         <div class="container-fluid h-100">
             <div class="row align-items-center h-100">
                 <div class="col-12 col-md-6 mx-auto styleMax">
@@ -35,11 +41,12 @@
                         pedidos em 
                         apenas um mês
                     </h1>
-                    <h2>
+                    <p>
                         Esse é o alcance das lojas parceiras do iFood.
                         Faça parte e alavanque suas vendas em São Paulo.
-                    </h2>
+                    </p>
                 </div>
+
                 <div class="col-12 col-md-6 centerForm">
                     <form action="/challenge-ifood/endereco" method="get">
                         <div class="form-group">
@@ -60,10 +67,10 @@
                         </div>
                     </form>
                 </div>
-
             </div>
         </div>
-    </div>
+    </main>
 
 </body>
+
 </html>

@@ -18,7 +18,7 @@ body{
 .navbar-brand{
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: auto;
 }
 
 .redBar{

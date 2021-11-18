@@ -27,7 +27,7 @@
 <body>
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="assets/ifood-logo.svg" alt="">
+            <img src="assets/ifood-logo.svg" alt="" style="width: auto;">
         </a>
     </nav>
     <nav class="redBar">

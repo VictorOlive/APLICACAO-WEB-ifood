@@ -3,10 +3,6 @@
     height: 100%;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-}
-
 .navbar{
     display: flex;
     justify-content: center;

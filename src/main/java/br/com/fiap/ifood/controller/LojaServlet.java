@@ -64,6 +64,8 @@ public class LojaServlet extends HttpServlet {
 				razaoSocial, nome, celularOuTelefone, Integer.parseInt(mediaPedidoPorHora), new Date(),
 				new Date(), null);
 
+		resp.sendRedirect("/challenge-ifood/dashboard");
+
 		try {
 			dao.create(loja);
 		} catch (SQLException e) {
